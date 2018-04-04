@@ -92,6 +92,12 @@
 	font-size: .75rem;
 }
 
+.currentPlayerColor {
+	background-color: rgba(116,251,115, .6);
+
+}
+
+
 .winner {
 	background-color: #FB7374;
 }

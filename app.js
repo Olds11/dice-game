@@ -20,6 +20,8 @@ class DiceGame {
 
 	rollDice () {
 		this.endTurnWarning.style.display = "none";
+		let playerBox = document.querySelector("#player-" + this.activePlayer + "-box");
+		playerBox.classList.add("currentPlayerColor");
 		if (this.gameOn) {
 			let diceRoll = Math.floor(Math.random() * 6) + 1;
 			let currentScore = document.getElementById("roundScore-" + this.activePlayer);
@@ -31,6 +33,7 @@ class DiceGame {
 			} else {
 				this.roundScore = 0;
 				this.dice.src = "dice-" + diceRoll + ".png";
+				playerBox.classList.remove("currentPlayerColor");
 				currentScore.innerHTML  = this.roundScore;
 				this.activePlayer = this.activePlayer == 0 ? 1 : 0;
 				this.dice.style.display = "none";
@@ -49,6 +52,7 @@ class DiceGame {
 		let playerTitle = document.querySelector("#player-" + this.activePlayer + "-box" + " .playerTitle");
 		currentScore.innerHTML  = this.roundScore;
 		if (this.scores[this.activePlayer] < 100) {
+				playerBox.classList.remove("currentPlayerColor");
 				this.activePlayer = this.activePlayer == 0 ? 1 : 0;
 		} else {
 			playerBox.classList.add("winner");
@@ -70,8 +74,8 @@ class DiceGame {
 		let playerOneGlobalScore = document.getElementById("global-1");
 		let currentScorePlayerZero = document.getElementById("roundScore-0");
 		let currentScorePlayerOne = document.getElementById("roundScore-1");
-		playerZeroBox.classList.remove("winner");
-		playerOneBox.classList.remove("winner");
+		playerZeroBox.classList.remove("winner", "currentPlayerColor");
+		playerOneBox.classList.remove("winner", "currentPlayerColor");
 		playerZeroTitle.innerHTML = "PLAYER 1";
 		playerOneTitle.innerHTML = "PLAYER 2"
 		playerZeroGlobalScore.innerHTML = this.scores[0];
