@@ -184,3 +184,9 @@
 	transform: scale(1.1);
 }
 
+.container--rules {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+}
+
