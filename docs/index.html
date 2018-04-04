@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pig</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+</head>
+
+<body>
+	<div class="jumbotron container text-center">
+	  <h1 class="display-4" style="font-family: 'Fontdiner Swanky', cursive" id="h1-override">Pig: The Jeopardy Dice Game</h1>
+	  <hr class="my-4">
+	  <p class="lead mb-5">Word of Adivce: Don't Get Too Greedy!</p>
+	  <p class="lead mb-0">
+	    <a class="btn btn-primary btn-lg btn-pink" href="rules.html" role="button">How to Play</a>
+	  </p>
+	</div>
+
+<!-- 	<h1 id="title">Pig: The Dice Game</h1>
+	<p id="howTo"><a href="rules.html">How To Play</a></p> -->
+	<div class="container">
+		<div class="responsive-width">
+			<div class="text-center mt-4 mb-4">
+				<button type="button" class="btn btn-secondary" id="newGame">New Game</button>
+			</div>
+			<div class="text-center mt-4 mb-4">
+				<button type="button" class="btn btn-secondary mr-2" id="rollDice">Roll</button>
+				<button type="button" class="btn btn-secondary ml-2" id="holdButton">Hold</button>
+			
+			</div>
+			<div class="dice-box">
+				<img id="dice" class="dice-size" src="dice-5.png">
+			</div>
+			<div id="end-turn-warning">
+				<div class="alert alert-danger" role="alert">	
+					You rolled a 1. End of Turn. Next Player!
+				</div>
+			</div>
+			<div class="card-group">
+			  <div class="card" id="player-0-box">
+			  	<div class="player-image">
+			    	<img class="card-img-top player-image player-image-1" src="player1-min.jpg" alt="Card image cap">
+			    </div>
+			    <div class="card-body">
+			      <h5 class="card-title text-center playerTitle" id="player-0">PLAYER 1</h5>
+			      <p class="card-text text-center lead" id="global-0">0</p>
+			      <div class="roundBox">
+						<p class="current">Round Score:</p>
+						<p id="roundScore-0">0</p> 
+
+					</div>
+			    </div>
+			  </div>
+			  <div class="card" id="player-1-box">
+			  	<div class="player-image">
+			    	<img class="card-img-top player-image player-image-2" src="player2-min.jpg" alt="Card image cap">
+			    </div>
+			    <div class="card-body">
+			      <h5 class="card-title text-center playerTitle" id="player-1">PLAYER 2</h5>
+			      <p class="card-text text-center lead" id="global-1">0</p>
+			      <div class="roundBox">
+						<p class="current">Round Score:</p>
+						<p id="roundScore-1">0</p> 
+
+				  </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div> <!-- end  container -->
+	<footer class="footer mt-5 mb-4">
+		<div class="container text-center footer-font">
+			<p class="text-muted mb-0">Pig: The Jeopardy Game designed and created by Breanna Schmidt</p>
+			<a class="text-muted" href="https://www.freepik.com/free-photos-vectors/design">Pig design vectors created by Freepik &amp; </a>
+			<a class="text-muted" href='https://www.freepik.com/free-vector/idyllic-farm-landscape_851615.htm'>Farm image designed by Freepik</a>
+		</div>
+	</footer>
+
+<script type="text/javascript" src="app.js"></script>
+
+
+
+</body>
+</html>

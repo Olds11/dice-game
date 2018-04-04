@@ -1,0 +1,106 @@
+.player-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow:hidden;
+	margin: 0 auto;
+
+}
+
+.player-image-1:hover {
+	transform: rotate(7deg);
+}
+
+
+.player-image-2:hover {
+	transform: rotate(-7deg);
+}
+
+.roundBox {
+	position: relative;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: url("farm-min.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.btn-pink {
+	background-color: #FB7374;
+	border: #FB7374 1px solid;
+}
+
+.btn-pink:hover {
+	background-color: #A3CBF1;
+	color:blue;
+}
+
+.dice-box {
+	transition: transform .3 ease-out;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dice-size {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+	border: 1px #FB7374 solid;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px grey;
+	transform: scale(1);
+
+}
+
+#dice {
+	display: none;
+	margin: 2rem auto;
+}
+
+#end-turn-warning {
+	display: none;
+	text-align: center;
+	margin: 2rem auto;
+	color: #FB7374;
+	font-size: 1.3rem;
+}
+
+.dice-size:hover {
+	transform: scale(1.1);
+}
+
+.footer-font {
+	font-size: .75rem;
+}
+
+.winner {
+	background-color: #FB7374;
+}
+
+.pig-image-size {
+	width: 200px;
+}
+
+.h2-font {
+	font-size: 1.6rem;
+}
+
+#backToGame-link {
+	color: #FB7374;
+}
+
+#backToGame-link:hover {
+	text-decoration: none;
+	color: #A3CBF1;
+}
+
+
+
+}
+
