@@ -61,8 +61,8 @@
 
 
 .dice-size {
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	margin-bottom: 2rem;
 	border: 1px #FB7374 solid;
 	border-radius: 5px;
@@ -73,7 +73,7 @@
 
 #dice {
 	display: none;
-	margin: 1rem auto;
+	margin: -1rem auto 1rem auto;
 }
 
 
