@@ -3,14 +3,22 @@
 }
 
 .player-image {
-	width: 163px;
-	height: 163px;
+	width: 144px;
+	height: 144px;
 	border-radius: 50%;
 	overflow:hidden;
 	margin: 0 auto;
 	transition: all .3s ease-out;
 
 }
+
+@media (min-width: 470px) {
+	.player-image {
+		width: 200px;
+		height: 200px;
+	}
+}
+
 
 .player-image-1:hover {
 	transform: rotate(7deg);
@@ -110,6 +118,8 @@
 	font-size: 2rem;
 
 }
+
+@media
 
 .btn--container {
 	/*display: inline-block;
