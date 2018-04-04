@@ -59,11 +59,11 @@
 	margin-right: auto;
 }
 
+
 .dice-size {
-	width: 100px;
-	height: 100px;
-	margin-bottom: 3rem;
-	margin-top: 1rem;
+	width: 70px;
+	height: 70px;
+	margin-bottom: 2rem;
 	border: 1px #FB7374 solid;
 	border-radius: 5px;
 	box-shadow: 1px 1px 3px grey;
@@ -73,8 +73,26 @@
 
 #dice {
 	display: none;
-	margin: 2rem auto;
+	margin: 1rem auto;
 }
+
+
+@media (min-width: 470px) {
+	.dice-size {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 3rem;
+		margin-top: 1rem;
+	}
+
+	#dice {
+		margin: 2rem auto;
+	}
+}
+
+
+
+
 
 #end-turn-warning {
 	display: none;
