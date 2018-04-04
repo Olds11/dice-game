@@ -3,11 +3,12 @@
 }
 
 .player-image {
-	width: 200px;
-	height: 200px;
+	width: 163px;
+	height: 163px;
 	border-radius: 50%;
 	overflow:hidden;
 	margin: 0 auto;
+	transition: all .3s ease-out;
 
 }
 
@@ -115,5 +116,37 @@
 	margin-right: 2rem;
 	margin-left: 2rem;
 	margin-bottom: 2rem;*/
+}
+
+.card {
+	width: 50%;
+}
+
+.container--in {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.footer {
+	padding-top: 4rem;
+}
+
+.bottom-image {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8rem;
+	max-width: 250px;
+	overflow: hidden;
+	transition: all .3s ease-out;
+}
+
+.bottom-image img {
+	max-width: 250px;
+	transform: scale(1);
+	transition: all .3s ease-out;
+}
+
+.bottom-image:hover img {
+	transform: scale(1.1);
 }
 
